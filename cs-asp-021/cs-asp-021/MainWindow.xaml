@@ -7,23 +7,52 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="1000" Width="1000">
     <Grid>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="625" Margin="0,345,0,0" Stroke="Black" VerticalAlignment="Top" Width="325" RenderTransformOrigin="0.939,0.132"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="625" Margin="719,345,-0.4,0" Stroke="Black" VerticalAlignment="Top" Width="275" RenderTransformOrigin="0.939,0.132"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="625" Margin="351,345,0,0" Stroke="Black" VerticalAlignment="Top" Width="275" RenderTransformOrigin="0.939,0.132"/>
-        <Label Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Label Content="Driver Info" HorizontalAlignment="Left" Margin="69,356,0,0" VerticalAlignment="Top" Width="164" FontFamily="Arial Black" FontSize="24"/>
-        <Label Content="Dates Driven" HorizontalAlignment="Left" Margin="417,352,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="24"/>
-        <Label Content="Driver Name :" HorizontalAlignment="Left" Margin="23,410,0,0" VerticalAlignment="Top" FontSize="18"/>
-        <Label Content="Social Security :" HorizontalAlignment="Left" Margin="23,471,0,0" VerticalAlignment="Top" FontSize="18"/>
-        <Label Content="Phone :" HorizontalAlignment="Left" Margin="23,519,0,0" VerticalAlignment="Top" FontSize="18"/>
-        <Label Content="Start Miles" HorizontalAlignment="Left" Margin="23,612,0,0" VerticalAlignment="Top"/>
-        <Label Content="End Miles" HorizontalAlignment="Left" Margin="28,653,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="RefrigeratedCheckbox" Content="Refrigerated($0.12 per mile" HorizontalAlignment="Left" Margin="23,583,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="drivernameTextbox" HorizontalAlignment="Left" Height="23" Margin="138,420,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
-        <TextBox x:Name="ssTextbox" HorizontalAlignment="Left" Height="23" Margin="153,481,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="PhoneTextbox" HorizontalAlignment="Left" Height="23" Margin="89,529,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="SMTextbox" HorizontalAlignment="Left" Height="18" Margin="94,620,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77"/>
-        <TextBox x:Name="EMTextbox" HorizontalAlignment="Left" Height="18" Margin="89,657,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="625" Margin="0,147,0,0" Stroke="Black" VerticalAlignment="Top" Width="325" RenderTransformOrigin="0.939,0.132"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="625" Margin="646,150,-0.4,0" Stroke="Black" VerticalAlignment="Top" Width="348" RenderTransformOrigin="0.939,0.132"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="625" Margin="356,155,0,0" Stroke="Black" VerticalAlignment="Top" Width="275" RenderTransformOrigin="0.939,0.132"/>
+        <Label Content="Driver Info" HorizontalAlignment="Left" Margin="89,166,0,0" VerticalAlignment="Top" Width="164" FontFamily="Arial Black" FontSize="24"/>
+        <Label Content="Dates Driven" HorizontalAlignment="Left" Margin="417,166,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="24"/>
+        <Label Content="Driver Name :" HorizontalAlignment="Left" Margin="28,256,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="Social Security :" HorizontalAlignment="Left" Margin="14,345,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="Phone :" HorizontalAlignment="Left" Margin="28,429,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="Start Miles" HorizontalAlignment="Left" Margin="23,562,0,0" VerticalAlignment="Top"/>
+        <Label Content="End Miles" HorizontalAlignment="Left" Margin="28,614,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="RefrigeratedCheckbox" Content="Refrigerated($0.12 per mile" HorizontalAlignment="Left" Margin="28,508,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="drivernameTextbox" HorizontalAlignment="Left" Height="23" Margin="153,267,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <TextBox x:Name="ssTextbox" HorizontalAlignment="Left" Height="23" Margin="153,355,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="PhoneTextbox" HorizontalAlignment="Left" Height="23" Margin="111,439,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="SMTextbox" HorizontalAlignment="Left" Height="18" Margin="94,570,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77"/>
+        <TextBox x:Name="EMTextbox" HorizontalAlignment="Left" Height="18" Margin="94,621,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77"/>
+        <Label Content="Start Date" HorizontalAlignment="Left" Margin="459,230,0,0" VerticalAlignment="Top"/>
+        <Calendar x:Name="startDateCalendar" HorizontalAlignment="Left" Margin="401,256,0,0" VerticalAlignment="Top">
+            <Calendar.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE4EAF0" Offset="0"/>
+                    <GradientStop Color="#FFECF0F4" Offset="0.16"/>
+                    <GradientStop Color="#FFFCFCFD" Offset="0.16"/>
+                    <GradientStop Color="Red" Offset="1"/>
+                </LinearGradientBrush>
+            </Calendar.Background>
+        </Calendar>
+        <Label Content="End Date" HorizontalAlignment="Left" Margin="459,453,0,0" VerticalAlignment="Top"/>
+        <Calendar x:Name="endDateCalendar" HorizontalAlignment="Left" Margin="401,508,0,0" VerticalAlignment="Top">
+            <Calendar.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE4EAF0" Offset="0"/>
+                    <GradientStop Color="#FFECF0F4" Offset="0.16"/>
+                    <GradientStop Color="#FFFCFCFD" Offset="0.16"/>
+                    <GradientStop Color="#FFFA0606" Offset="1"/>
+                </LinearGradientBrush>
+            </Calendar.Background>
+        </Calendar>
+        <Label Content="Ticket" HorizontalAlignment="Left" Margin="745,162,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="24" Width="139"/>
+        <Label x:Name="driverNameLabel" Content="&#xA;fsdfsdf&#xD;&#xA;" HorizontalAlignment="Left" Margin="703,230,0,0" VerticalAlignment="Top" Width="209" Height="48"/>
+        <Button Content="Print" HorizontalAlignment="Left" Margin="646,120,0,0" VerticalAlignment="Top" Width="338" Height="25" Click="Button_Click"/>
+        <Label x:Name="SSresultLabel" Content="asdfasdf" HorizontalAlignment="Left" Margin="703,283,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.521,0.734" Width="209"/>
+        <Label x:Name="PhoneLabel" Content="asdfasdf" HorizontalAlignment="Left" Margin="703,309,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.521,0.734" Width="209"/>
+        <Label x:Name="TotalMiles" Content="asdfasdf" HorizontalAlignment="Left" Margin="703,335,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.521,0.734" Width="209"/>
+        <Label x:Name="TotalPayDue" Content="asdfasdf" HorizontalAlignment="Left" Margin="703,360,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.521,0.734" Width="209"/>
+        <Label x:Name="Totaldaysout" Content="asdfasdf" HorizontalAlignment="Left" Margin="703,386,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.521,0.734" Width="209"/>
 
     </Grid>
 </Window>
